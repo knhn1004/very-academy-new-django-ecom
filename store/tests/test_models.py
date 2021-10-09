@@ -15,3 +15,11 @@ class TestCategoriesModel(TestCase):
 
         data = self.data1
         self.assertTrue(isinstance(data, Category))
+
+    def test_category_default_name(self):
+        """[summary]
+        Test Category model default name
+        """
+
+        data = self.data1
+        self.assertTrue(str(data), 'django')
